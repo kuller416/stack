@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include<string.h>
 #include<stdlib.h>
-#define STACKSIZE 1000
+#define STACKSIZE 999
 struct stack
 {
     int size;
