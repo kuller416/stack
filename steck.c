@@ -12,7 +12,7 @@ void push(struct stack *kur, int wa)
 {
     if (kur->size == STACKSIZE)
     {
-        printf("HET");
+        printf("No");
     }
     else
     {
