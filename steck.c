@@ -6,7 +6,7 @@ struct stack
 {
     int size;
     int into[STACKSIZE];
-};
+}
 
 void push(struct stack *kur, int wa)
 {
