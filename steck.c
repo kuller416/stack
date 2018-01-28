@@ -54,9 +54,8 @@ int main()
             push(&kurwakulyator, cifra);
         }
         else
+            if (kurwakulyator.size == 2)
         {
-            if (size == 0)
-                break;
             b = pop(&kurwakulyator);
             a = pop(&kurwakulyator);
             switch(actual[0])
@@ -72,15 +71,23 @@ int main()
                 break;
             case '/':
                 push(&kurwakulyator, a / b);
+                break;
+            case '=':
+                pop(&kurwakulyator);
+                printf("%d", b);
+                break;
             default:
                 printf("error");
             }
 
         }
+    if (actual[0] == '=')
+    {
+        result = pop(&kurwakulyator);
+    printf("%d", result);
+    }
     }
     result = pop(&kurwakulyator);
     printf("%d", result);
-    getchar();
-    system("pause");
     return 0;
 }
